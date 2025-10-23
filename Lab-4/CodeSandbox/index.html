@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML-форма</title>
+    <style>
+      label,
+      input,
+      button {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Моя перша HTML-форма</h1>
+
+    <form action="https://httpbin.org/post" method="post">
+      <label for="name_of_user">Ім'я:</label>
+      <input type="text" name="name" id="name_of_user" /><br />
+
+      <label for="date_of_birth">Дата народження:</label>
+      <input type="date" name="birth_date" id="date_of_birth" /><br />
+
+      <label>
+        Імейл:
+        <input type="email" name="email" id="email_of_user" /> </label
+      ><br />
+
+      <label for="user_message">Повідомлення:</label>
+      <textarea name="message" id="user_message"></textarea><br /><br />
+
+      <label for="checkbox">Ваші улюблені напої?</label><br />
+      <input type="checkbox" id="drink1" name="drink1" value="Чай" />
+      <label for="vehicle1">Чай</label>
+      <input type="checkbox" id="drink2" name="drink2" value="Кава" />
+      <label for="vehicle2">Кава</label>
+      <input
+        type="checkbox"
+        id="drink3"
+        name="drink3"
+        value="Молочний Коктейль"
+      />
+      <label for="vehicle3">Молочний коктейль</label>
+      <input type="checkbox" id="drink4" name="drink4" value="Пиво" />
+      <label for="vehicle3">Пиво</label><br />
+
+      <label for="radio">Моя національність</label><br />
+      <input type="radio" id="nation1" name="nation" value="Українець" />
+      <label for="html">Українець</label>
+      <input type="radio" id="nation2" name="nation" value="CSS" />
+      <label for="css">Бритаець</label>
+      <input type="radio" id="nation3" name="nation" value="JavaScript" />
+      <label for="javascript">Італієць</label><br />
+
+      <button type="submit">Надіслати</button>
+      <button type="reset">Очистити</button>
+    </form>
+
+    <picture>
+      <source
+        media="(max-width: 468px)"
+        srcset="https://picsum.photos/300/500"
+      />
+      <source srcset="https://picsum.photos/1000/400" />
+      <img src="https://picsum.photos/1000/400" alt="" />
+    </picture>
+  </body>
+</html>
