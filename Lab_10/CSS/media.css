@@ -1,0 +1,183 @@
+@media (max-width: 767px) and (orientation: portrait) {
+    
+    @font-face {
+        font-family: 'Avalon';
+        src: url('fonts/AvalonRegular.ttf') format('truetype');  
+    }
+
+    @font-face {
+        font-family: 'Pixel Game';
+        src: url('fonts/PixelGame-R9AZe.otf') format('opentype');  
+    }
+
+    @keyframes flicker {
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 8px #fff,
+        0 0 15px rgb(140, 0, 128),
+        0 0 30px rgb(140, 0, 128),
+        0 0 40px rgb(140, 0, 128),
+        0 0 70px rgb(140, 0, 128),
+        0 0 100px rgb(140, 0, 128);
+        }
+        20%, 24%, 55% {
+        text-shadow:
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 5px #fff,
+        0 0 11px rgb(140, 0, 128),
+        0 0 20px rgb(140, 0, 128),
+        0 0 30px rgb(140, 0, 128),
+        0 0 55px rgb(140, 0, 128),
+        0 0 80px rgb(140, 0, 128);
+        }
+    }
+
+    html {
+        overflow: auto;
+        background: url("images/Background.jpg") center center/ cover no-repeat;
+        min-height: 100vh;
+    }
+    
+    .Vr-Man {
+        width: 90%;
+        right: -5vw;
+        top: 100vw;
+        position: fixed;
+        margin: 0 auto;
+        display: block;
+        opacity: 0.2;
+        z-index: -1;
+        left: 0;
+    }
+    
+    .Logo {
+        width: 20%;
+        margin-top: 10px;
+        margin-left: 2px;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 3vw;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    nav a {
+        font-size: 5vw;
+        text-align: center;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 4vw;
+        text-align: center;
+    }
+    
+    h1 {
+        position: relative;
+        left: auto;
+        top: auto;
+        font-size: 10vw;
+        margin: 5vw auto;
+        width: 90%;
+        animation: flicker 2s infinite alternate;
+    }
+    
+    .Join-Btn {
+        position: relative;
+        top: auto;
+        left: auto;
+        font-size: 6vw;
+        padding: 2vw 4vw;
+        margin: 5vw auto;
+        display: block;
+        width: fit-content;
+        transform: none;
+        border-width: 0.8vw;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    
+    html {
+        overflow: auto;
+        background: url("images/Background.jpg") center center/ cover no-repeat;
+        min-height: 100vh;
+    }
+    
+    .Vr-Man {
+        width: 40%;
+        right: -5vw;
+        top: 20vh;
+        position: fixed;
+        margin: 0 auto;
+        display: block;
+        opacity: 0.2;
+        z-index: -1;
+        left: auto;
+    }
+    
+    .Logo {
+        width: 15%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    
+    nav {
+        flex-direction: row;
+        gap: 2vw;
+        align-items: center;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav a {
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+    header {
+        flex-direction: row;
+        gap: 2vw;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    h1 {
+        position: relative;
+        left: auto;
+        top: auto;
+        font-size: 6vw;
+        margin: 3vw auto;
+        width: 80%;
+        animation: flicker 2s infinite alternate;
+    }
+    
+    .Join-Btn {
+        position: relative;
+        top: auto;
+        left: auto;
+        font-size: 4vw;
+        padding: 1.5vw 3vw;
+        margin: 3vw auto;
+        display: block;
+        width: fit-content;
+        transform: none;
+        border-width: 0.5vw;
+    }
+    
+    body {
+        padding: 1vh 2vw;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0 2vw;
+    }
+}
